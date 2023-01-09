@@ -9,28 +9,28 @@
 // needs: esphome fastled --> id: fastledlight
 
 // Layout of Clock (X not used chars) - PIN Layout
-// ILNESTODEUX    1.......11
-// QUATRETROIS    22......12
-// NEUFUNESEPT    23......33
-// HUITSIXCINQ    44......34
-// MIDIXMINUIT    45......55
-// ONZERHEURES    ....
-// MOINSOLEDIX    ....
-// ETRQUARTPMD    ....
-// VINGT-CINQU    ....
-// ETSDEMIEPAM    109.......101
+// ILNESTODEUX    1.......11 LIGNE 1
+// QUATRETROIS    22......12 LIGNE 2
+// NEUFUNESEPT    23......33 LIGNE 3
+// HUITSIXCINQ    44......34 LIGNE 4
+// MIDIXMINUIT    45......55 LIGNE 5
+// ONZERHEURES    46......56 LIGNE 6
+// MOINSOLEDIX    67......57 LIGNE 7
+// ETRQUARTPMD    68......78 LIGNE 8
+// VINGT-CINQU    89......79 LIGNE 9
+// ETSDEMIEPAM    109.......101 LIGNE 10
 // ICONS          110.......120
 // MINUTES        124.......121
 
-int leds_time_it_is[] = {0, 1, 3, 4, 5}; // ES IST
+int leds_time_it_is[] = {0, 1, 3, 4, 5}; // IL EST
 int leds_minutes[] = {124, 123, 122, 121}; // Minutes LEDS
 int leds_skiped[] = {110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120}; // Check Line 101
 int leds_time_minutes[][15] = {
-    {101, 100,  99,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // UHR
-    {  7,   8,   9,  10,  41,  40,  39,  38,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // FÜNF, NACH
-    { 21,  20,  19,  18,  41,  40,  39,  38,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // ZEHN, NACH
-    { 26,  27,  28,  29,  30,  31,  32,  41,  40,  39,  38,  -1,  -1,  -1,  -1}, // VIERTEL, NACH
-    { 17,  16,  15,  15,  14,  13,  12,  11,  41,  40,  39,  38,  -1,  -1,  -1}, // ZWANZIG, NACH
+    { 51,  52,  53,  54,  55,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // HEURE
+    { 34,  35,  36,  37,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // CINQ
+    { 57,  58,  59,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // DIX
+    {108, 109,  71,  72,  73,  74,  75,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // ET QUART
+    { 85,  86,  87,  88,  89,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // VINGT
     {  7,   8,   9,  10,  37,  36,  35,  44,  45,  46,  47,  -1,  -1,  -1,  -1}, // FÜNF, VOR, HALB
     { 44,  45,  46,  47,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // HALB
     {  7,   8,   9,  10,  41,  40,  39,  38,  44,  45,  46,  47,  -1,  -1,  -1}, // FÜNF, NACH, HALB
