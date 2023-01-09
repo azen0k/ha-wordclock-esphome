@@ -9,16 +9,16 @@
 // needs: esphome fastled --> id: fastledlight
 
 // Layout of Clock (X not used chars) - PIN Layout
-// ESXISTXFÜNF    1.......11
-// ZEHNZWANZIG    22......12
-// DREIVIERTEL    23......33
-// XXNACHVORXX    44......34
-// HALBXZWÖLFX    45......55
-// ZWEIXSIEBEN    ....
-// XDREIXXFÜNF    ....
-// ELFNEUNVIER    ....
-// XACHTZEHNRS    ....
-// XSECHSXXUHR    109.......101
+// ILNESTODEUX    1.......11
+// QUATRETROIS    22......12
+// NEUFUNESEPT    23......33
+// HUITSIXCINQ    44......34
+// MIDIXMINUIT    45......55
+// ONZERHEURES    ....
+// MOINSOLEDIX    ....
+// ETRQUARTPMD    ....
+// VINGT-CINQU    ....
+// ETSDEMIEPAM    109.......101
 // ICONS          110.......120
 // MINUTES        124.......121
 
