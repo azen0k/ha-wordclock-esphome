@@ -1,5 +1,8 @@
-# ha-wordclock-esphome version FR EN COURS
+# ha-wordclock-esphome VERSION FR EN COURS NON TESTE
 ## General
+
+Projet en cours de modification, non testé à ce jour.
+
 This project is just for documentation purposes and our attempt (together with a friend) to build an Wordclock, which is thightly bound to homeassistant using esphome.
 It uses the time and fastled plattform of esphome to controll the clock.
 ### Features:
